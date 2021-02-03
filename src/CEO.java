@@ -22,6 +22,11 @@ public class CEO extends Employee {
         System.out.println("I am going to Hawaii");
     }
 
+    @Override
+    public void goToDayOff() {
+        System.out.println("I want go to massage!");
+    }
+
     public void setHasCompanyCar(boolean hasCompanyCar) {
         this.hasCompanyCar = hasCompanyCar;
     }

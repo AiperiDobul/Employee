@@ -9,6 +9,11 @@ public class Specialist extends Employee {
         this.levels = levels;
     }
 
+    @Override
+    public void goToDayOff() {
+        super.goToDayOff();
+    }
+
     public Specialist(int levels) {
         this.levels = levels;
     }

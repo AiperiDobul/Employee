@@ -17,6 +17,10 @@ public class Developer extends Employee {
     public void goToVacation() {
         System.out.println("I am going to Bootcamp");
     }
+    @Override
+    public void goToDayOff() {
+        System.out.println("I have a headache");
+    }
 
     public String getGrades() {
         return grades;

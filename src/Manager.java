@@ -7,6 +7,10 @@ public class Manager extends Employee {
     public Manager(boolean hasStocks) {
         this.hasStocks = hasStocks;
     }
+    @Override
+    public void goToDayOff() {
+        System.out.println("I promised my son, that I will go with him to football");
+    }
 
     public Manager(String fio, int age, int salary, boolean hasStocks) {
         super(fio, age, salary);

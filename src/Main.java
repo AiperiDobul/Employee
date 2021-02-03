@@ -65,6 +65,16 @@ public class Main {
         for(Employee r: employees){
             r.goToVacation();
         }
+        harryPotter.goToDayOff();
+        ronWeasley.goToDayOff();
+        hermioneGranger.goToDayOff();
+        amanUsonov.goToDayOff();
+        camillaCross.goToDayOff();
+        selenaCharm.goToDayOff();
+        anjellaGloss.goToDayOff();
+        aidaiMurza.goToDayOff();
+        bermetBakir.goToDayOff();
+        aigulKulova.goToDayOff();
 
 
     }
