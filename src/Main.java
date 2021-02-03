@@ -19,6 +19,7 @@ public class Main {
     Пример распечатки фразы работника: "I am writing my awesome algorithm!"+
     В классе Main необходимо создать 3-х, специалистов, 4-х разработчиков, 2-х менеджеров и 1-го CEO,
       распечатать все поля каждого объекта (print) и вызвать уникальные  методы каждого объекта.*/
+
         Specialist harryPotter = new Specialist("Potter",27,2000,8);
         Specialist ronWeasley = new Specialist("Weasley",25,3000,7);
         Specialist hermioneGranger = new Specialist("Granger", 23,4000,10);
@@ -50,6 +51,20 @@ public class Main {
         System.out.println(anjellaGloss.print());
         System.out.println(aidaiMurza.print());
         System.out.println(bermetBakir.print());
+        Employee [] employees = new Employee[10];
+        employees[0] = harryPotter;
+        employees[1] = ronWeasley;
+        employees[2] = hermioneGranger;
+        employees[3] = amanUsonov;
+        employees[4] = camillaCross;
+        employees[5] = selenaCharm;
+        employees[6] = anjellaGloss;
+        employees[7] = aidaiMurza;
+        employees[8] = bermetBakir;
+        employees[9] = aigulKulova;
+        for(Employee r: employees){
+            r.goToVacation();
+        }
 
 
     }

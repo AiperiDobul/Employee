@@ -11,6 +11,9 @@ public class Employee {
         this.age = age;
         this.salary = salary;
     }
+    public void goToVacation(){
+        System.out.println("I am going to vacation");
+    }
 
     public String getFio() {
         return fio;
