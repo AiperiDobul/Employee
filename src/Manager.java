@@ -11,6 +11,10 @@ public class Manager extends Employee {
     public void goToDayOff() {
         System.out.println("I promised my son, that I will go with him to football");
     }
+    @Override
+    public void goToVacation() {
+        System.out.println("I am going to Issyk-Kul");
+    }
 
     public Manager(String fio, int age, int salary, boolean hasStocks) {
         super(fio, age, salary);

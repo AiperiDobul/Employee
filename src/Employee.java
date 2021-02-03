@@ -14,9 +14,7 @@ public abstract class Employee {
     public void goToVacation(){
         System.out.println("I am going to vacation");
     }
-    public void goToDayOff(){
-        System.out.println("I want to relax!");
-    }
+    public abstract void goToDayOff();
 
     public String getFio() {
         return fio;

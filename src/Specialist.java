@@ -11,7 +11,11 @@ public class Specialist extends Employee {
 
     @Override
     public void goToDayOff() {
-        super.goToDayOff();
+        System.out.println("I am going to sleep");;
+    }
+    @Override
+    public void goToVacation() {
+        System.out.println("I am going to Trip");
     }
 
     public Specialist(int levels) {
