@@ -1,3 +1,7 @@
+package Childs;
+
+import Parent.Employee;
+
 public class CEO extends Employee {
     private boolean hasCompanyCar;
     public CEO(){
@@ -39,7 +43,7 @@ public class CEO extends Employee {
 
     @Override
     public String toString() {
-        return "CEO{" +
+        return "Childs.CEO{" +
                 super.toString()+
                 "hasCompanyCar=" + hasCompanyCar +
                 '}';

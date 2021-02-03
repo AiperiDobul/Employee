@@ -1,3 +1,7 @@
+package Childs;
+
+import Parent.Employee;
+
 public class Specialist extends Employee {
     private int levels;
     public Specialist(){
@@ -39,7 +43,7 @@ public class Specialist extends Employee {
 
     @Override
     public String toString() {
-        return "Specialist{" +
+        return "Childs.Specialist{" +
                 super.toString()+
                 "levels=" + levels +
                 '}';

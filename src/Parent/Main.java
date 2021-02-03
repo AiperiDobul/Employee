@@ -1,23 +1,29 @@
+package Parent;
+
+import Childs.CEO;
+import Childs.Developer;
+import Childs.Manager;
+import Childs.Specialist;
 
 public class Main {
     public static void main(String[] args) {
-    /*Программа должна содержать классы Employee, Specialist, Developer, Manager, CEO,+
+    /*Программа должна содержать классы Parent.Employee, Childs.Specialist, Childs.Developer, Childs.Manager, Childs.CEO,+
     которые должны быть наследованы определенным образом.+
     У каждого сотрудника есть ФИО, возраст и заработная плата.+
     У специалистов есть уровни (int levels), у разработчиков есть ранги
      (String grades = "Middle"), у менеджеров есть акции (boolean hasStocks), у исполнительного директора
      есть служебная машина (boolean hasCompanyCar).+
      Исполнительный директор является менеджером!
-    В каждом классе кроме Main должны быть все геттеры и сеттеры, 2 конструктора (пустой и со всеми полями)
+    В каждом классе кроме Parent.Main должны быть все геттеры и сеттеры, 2 конструктора (пустой и со всеми полями)
     и метод print() который распечатывает все поля класса.
     Также необходимо реализовать следующие методы, которые распечатывают соответствующую фразу
         работника на ваше усмотрение:
         1) Специалисты могут работать с клиентами - метод workWithClients();+
         2) Разработчики пишут код - метод writeCode();+
         3) Менеджеры разрабатывают процедуры - метод writeProcedures();+
-        4) CEO работает над IPO - метод goPublic();+
+        4) Childs.CEO работает над IPO - метод goPublic();+
     Пример распечатки фразы работника: "I am writing my awesome algorithm!"+
-    В классе Main необходимо создать 3-х, специалистов, 4-х разработчиков, 2-х менеджеров и 1-го CEO,
+    В классе Parent.Main необходимо создать 3-х, специалистов, 4-х разработчиков, 2-х менеджеров и 1-го Childs.CEO,
       распечатать все поля каждого объекта (print) и вызвать уникальные  методы каждого объекта.*/
 
         Specialist harryPotter = new Specialist("Potter",27,2000,8);
@@ -51,7 +57,7 @@ public class Main {
         System.out.println(anjellaGloss.print());
         System.out.println(aidaiMurza.print());
         System.out.println(bermetBakir.print());
-        Employee [] employees = new Employee[10];
+        Employee[] employees = new Employee[10];
         employees[0] = harryPotter;
         employees[1] = ronWeasley;
         employees[2] = hermioneGranger;

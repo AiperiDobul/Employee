@@ -1,3 +1,7 @@
+package Childs;
+
+import Parent.Employee;
+
 public class Developer extends Employee {
     private String grades;
     public Developer(){
@@ -38,7 +42,7 @@ public class Developer extends Employee {
 
     @Override
     public String toString() {
-        return "Developer{" +
+        return "Childs.Developer{" +
                 super.toString()+
                 "grades='" + grades + '\'' +
                 '}';

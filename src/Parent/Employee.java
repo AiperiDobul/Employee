@@ -1,3 +1,5 @@
+package Parent;
+
 public abstract class Employee {
     private String fio;
     private int age;
@@ -42,7 +44,7 @@ public abstract class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Parent.Employee{" +
                 "fio='" + fio + '\'' +
                 ", age=" + age +
                 ", salary=" + salary +
@@ -50,7 +52,7 @@ public abstract class Employee {
     }
 
     public String print(){
-        return "Employee{" +
+        return "Parent.Employee{" +
                 "fio='" + fio + '\'' +
                 ", age=" + age +
                 ", salary=" + salary +

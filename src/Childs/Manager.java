@@ -1,3 +1,7 @@
+package Childs;
+
+import Parent.Employee;
+
 public class Manager extends Employee {
     private boolean hasStocks;
     public Manager(){
@@ -37,7 +41,7 @@ public class Manager extends Employee {
 
     @Override
     public String toString() {
-        return "Manager{" +
+        return "Childs.Manager{" +
                 super.toString()+
                 "hasStocks=" + hasStocks +
                 '}';
