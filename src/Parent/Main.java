@@ -10,9 +10,9 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Specialist harryPotter = new Specialist("Potter",27,2000,8);
-        Specialist ronWeasley = new Specialist("Weasley",25,3000,7);
-        Specialist hermioneGranger = new Specialist("Granger", 23,4000,10);
+        Specialist harryPotter = new Specialist("Potter", 27, 2000, 8);
+        Specialist ronWeasley = new Specialist("Weasley", 25, 3000, 7);
+        Specialist hermioneGranger = new Specialist("Granger", 23, 4000, 10);
         harryPotter.workWithClients();
         ronWeasley.workWithClients();
         hermioneGranger.workWithClients();
@@ -52,7 +52,7 @@ public class Main {
         employees[7] = aidaiMurza;
         employees[8] = bermetBakir;
         employees[9] = aigulKulova;
-        for(Employee r: employees){
+        for (Employee r : employees) {
             r.goToVacation();
         }
         harryPotter.goToDayOff();
@@ -70,10 +70,21 @@ public class Main {
         printDeveloperGrade(camillaCross);
         printDeveloperGrade(selenaCharm);
         printDeveloperGrade(anjellaGloss);
+        DeveloperGrade junior = DeveloperGrade.Junior;
+        DeveloperGrade middle = DeveloperGrade.Middle;
+        DeveloperGrade senior = DeveloperGrade.Senior;
+        DeveloperGrade teamlead = DeveloperGrade.Teamlead;
+        System.out.println("Метод printPhrase "+ junior.printPhrase());
+        System.out.println("Метод printPhrase "+ middle.printPhrase());
+        System.out.println("Метод printPhrase "+ senior.printPhrase());
+        System.out.println("Метод printPhrase "+ teamlead.printPhrase());
 
     }
-    public static void printDeveloperGrade(Developer developer){
-        switch (developer.getDeveloperGrade()){
+
+
+
+    public static void printDeveloperGrade(Developer developer) {
+        switch (developer.getDeveloperGrade()) {
             case Junior:
                 System.out.println("I am junior Developer");
                 break;
@@ -82,9 +93,9 @@ public class Main {
                 break;
             case Senior:
                 System.out.println("I am senior Developer");
-                break; 
+                break;
             case Teamlead:
-                System.out.println("I am senior Developer");
+                System.out.println("I am Teamlead");
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + developer.getDeveloperGrade());
