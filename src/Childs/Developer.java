@@ -1,20 +1,28 @@
 package Childs;
 
+import Parent.DeveloperGrade;
 import Parent.Employee;
 
 public class Developer extends Employee {
     private String grades;
-    public Developer(){
-
+    private DeveloperGrade developerGrade;
+    public Developer(String fio, int age, int salary, String grades, DeveloperGrade developerGrade){
+        super(fio, age, salary);
+        this.grades = grades;
+        this.developerGrade = developerGrade;
     }
 
     public Developer(String grades) {
         this.grades = grades;
     }
 
-    public Developer(String fio, int age, int salary, String grades) {
-        super(fio, age, salary);
-        this.grades = grades;
+
+    public DeveloperGrade getDeveloperGrade() {
+        return developerGrade;
+    }
+
+    public void setDeveloperGrade(DeveloperGrade developerGrade) {
+        this.developerGrade = developerGrade;
     }
 
     @Override

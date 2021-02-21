@@ -6,25 +6,9 @@ import Childs.Manager;
 import Childs.Specialist;
 
 public class Main {
+
     public static void main(String[] args) {
-    /*Программа должна содержать классы Parent.Employee, Childs.Specialist, Childs.Developer, Childs.Manager, Childs.CEO,+
-    которые должны быть наследованы определенным образом.+
-    У каждого сотрудника есть ФИО, возраст и заработная плата.+
-    У специалистов есть уровни (int levels), у разработчиков есть ранги
-     (String grades = "Middle"), у менеджеров есть акции (boolean hasStocks), у исполнительного директора
-     есть служебная машина (boolean hasCompanyCar).+
-     Исполнительный директор является менеджером!
-    В каждом классе кроме Parent.Main должны быть все геттеры и сеттеры, 2 конструктора (пустой и со всеми полями)
-    и метод print() который распечатывает все поля класса.
-    Также необходимо реализовать следующие методы, которые распечатывают соответствующую фразу
-        работника на ваше усмотрение:
-        1) Специалисты могут работать с клиентами - метод workWithClients();+
-        2) Разработчики пишут код - метод writeCode();+
-        3) Менеджеры разрабатывают процедуры - метод writeProcedures();+
-        4) Childs.CEO работает над IPO - метод goPublic();+
-    Пример распечатки фразы работника: "I am writing my awesome algorithm!"+
-    В классе Parent.Main необходимо создать 3-х, специалистов, 4-х разработчиков, 2-х менеджеров и 1-го Childs.CEO,
-      распечатать все поля каждого объекта (print) и вызвать уникальные  методы каждого объекта.*/
+
 
         Specialist harryPotter = new Specialist("Potter",27,2000,8);
         Specialist ronWeasley = new Specialist("Weasley",25,3000,7);
@@ -32,10 +16,10 @@ public class Main {
         harryPotter.workWithClients();
         ronWeasley.workWithClients();
         hermioneGranger.workWithClients();
-        Developer amanUsonov = new Developer("Usonov", 28, 4000, "Junior");
-        Developer camillaCross = new Developer("Cross", 31, 4500, "Middle");
-        Developer selenaCharm = new Developer("Charm", 26, 3000, "Senior");
-        Developer anjellaGloss = new Developer("Gloss", 29, 3500, "Junior");
+        Developer amanUsonov = new Developer("Usonov", 28, 4000, "Junior", DeveloperGrade.Junior);
+        Developer camillaCross = new Developer("Cross", 31, 4500, "Middle", DeveloperGrade.Middle);
+        Developer selenaCharm = new Developer("Charm", 26, 3000, "Senior", DeveloperGrade.Senior);
+        Developer anjellaGloss = new Developer("Gloss", 29, 3500, "Teamlead", DeveloperGrade.Teamlead);
         amanUsonov.writeCode();
         camillaCross.writeCode();
         selenaCharm.writeCode();
@@ -82,6 +66,29 @@ public class Main {
         bermetBakir.goToDayOff();
         aigulKulova.goToDayOff();
 
+        printDeveloperGrade(amanUsonov);
+        printDeveloperGrade(camillaCross);
+        printDeveloperGrade(selenaCharm);
+        printDeveloperGrade(anjellaGloss);
 
     }
+    public static void printDeveloperGrade(Developer developer){
+        switch (developer.getDeveloperGrade()){
+            case Junior:
+                System.out.println("I am junior Developer");
+                break;
+            case Middle:
+                System.out.println("I am middle Developer");
+                break;
+            case Senior:
+                System.out.println("I am senior Developer");
+                break; 
+            case Teamlead:
+                System.out.println("I am senior Developer");
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + developer.getDeveloperGrade());
+        }
+    }
+
 }
