@@ -84,7 +84,7 @@ public class Main {
                 System.out.println("I am senior Developer");
                 break; 
             case Teamlead:
-                System.out.println("I am senior Developer");
+                System.out.println("I am Teamlead");
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + developer.getDeveloperGrade());
